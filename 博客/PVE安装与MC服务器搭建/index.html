@@ -12,26 +12,28 @@
         <meta name="author" content="Dichgrem">
       
       
-        <link rel="canonical" href="https://dichgrem.github.io/">
+        <link rel="canonical" href="https://dichgrem.github.io/%E5%8D%9A%E5%AE%A2/PVE%E5%AE%89%E8%A3%85%E4%B8%8EMC%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">
       
       
+        <link rel="prev" href="../OpenWrt%20%E8%BD%AF%E8%B7%AF%E7%94%B1%E9%83%A8%E7%BD%B2/">
       
-        <link rel="next" href="%E5%8D%9A%E5%AE%A2/Android%20TV%20%E6%8A%98%E8%85%BE%E5%B0%8F%E8%AE%B0/">
+      
+        <link rel="next" href="../Win%E5%AE%9A%E5%88%B6%2Blinux%E5%8F%8C%E7%B3%BB%E7%BB%9F/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
     
     
       
-        <title>Dich Wiki</title>
+        <title>PVE安装与MC服务器搭建 - Dich Wiki</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -89,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#deb-httpsmirrorstunatsinghuaeducnproxmoxdebian-bookworm-pve-no-subscription" class="md-skip">
           跳转至
         </a>
       
@@ -105,7 +107,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="Dich Wiki" class="md-header__button md-logo" aria-label="Dich Wiki" data-md-component="logo">
+    <a href="../.." title="Dich Wiki" class="md-header__button md-logo" aria-label="Dich Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -125,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              前言
+              PVE安装与MC服务器搭建
             
           </span>
         </div>
@@ -242,7 +244,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Dich Wiki" class="md-nav__button md-logo" aria-label="Dich Wiki" data-md-component="logo">
+    <a href="../.." title="Dich Wiki" class="md-nav__button md-logo" aria-label="Dich Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -269,29 +271,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    前言
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -300,33 +282,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wiki" class="md-nav__link">
-    关于Wiki的草案
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -335,17 +290,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
@@ -358,7 +315,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             博客
@@ -371,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/Android%20TV%20%E6%8A%98%E8%85%BE%E5%B0%8F%E8%AE%B0/" class="md-nav__link">
+      <a href="../Android%20TV%20%E6%8A%98%E8%85%BE%E5%B0%8F%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -391,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/Arch%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/" class="md-nav__link">
+      <a href="../Arch%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -411,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/Chrome%20Book%E7%AE%80%E6%98%8E%E6%8C%87%E5%8D%97/" class="md-nav__link">
+      <a href="../Chrome%20Book%E7%AE%80%E6%98%8E%E6%8C%87%E5%8D%97/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -431,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/OpenWrt%20%E8%BD%AF%E8%B7%AF%E7%94%B1%E9%83%A8%E7%BD%B2/" class="md-nav__link">
+      <a href="../OpenWrt%20%E8%BD%AF%E8%B7%AF%E7%94%B1%E9%83%A8%E7%BD%B2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -449,9 +406,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/PVE%E5%AE%89%E8%A3%85%E4%B8%8EMC%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -460,6 +426,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -471,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/Win%E5%AE%9A%E5%88%B6%2Blinux%E5%8F%8C%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+      <a href="../Win%E5%AE%9A%E5%88%B6%2Blinux%E5%8F%8C%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -491,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA%E4%B8%8ERoot%E6%95%99%E7%A8%8B/" class="md-nav__link">
+      <a href="../%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA%E4%B8%8ERoot%E6%95%99%E7%A8%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/%E9%BB%91%E7%BE%A4%E8%BE%89%E6%9E%81%E9%80%9F%E5%AE%89%E8%A3%85/" class="md-nav__link">
+      <a href="../%E9%BB%91%E7%BE%A4%E8%BE%89%E6%9E%81%E9%80%9F%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -531,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/%E6%9C%BA%E6%A2%B0%E9%9D%A9%E5%91%BDLinux%E9%94%AE%E7%9B%98%E5%A4%B1%E7%81%B5%E6%8B%AF%E6%95%91%E8%AE%B0/" class="md-nav__link">
+      <a href="../%E6%9C%BA%E6%A2%B0%E9%9D%A9%E5%91%BDLinux%E9%94%AE%E7%9B%98%E5%A4%B1%E7%81%B5%E6%8B%AF%E6%95%91%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -551,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+      <a href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E5%9F%BA%E7%A1%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -571,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/%E6%B5%81%E9%87%8F%E5%8D%A1%E8%B4%AD%E4%B9%B0%E4%B8%8E%E5%A5%97%E8%B7%AF/" class="md-nav__link">
+      <a href="../%E6%B5%81%E9%87%8F%E5%8D%A1%E8%B4%AD%E4%B9%B0%E4%B8%8E%E5%A5%97%E8%B7%AF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -591,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E5%8D%9A%E5%AE%A2/%E8%A3%85%E6%9C%BA%E5%BF%AB%E9%80%9F%E6%8C%87%E5%8D%97/" class="md-nav__link">
+      <a href="../%E8%A3%85%E6%9C%BA%E5%BF%AB%E9%80%9F%E6%8C%87%E5%8D%97/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="后记.md" class="md-nav__link">
+      <a href="../../后记.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,21 +618,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wiki" class="md-nav__link">
-    关于Wiki的草案
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -682,47 +634,153 @@
   
 
 
-<h1 id="_1">前言</h1>
-<p>这是Dich的Wiki空间，由Mkdocs构建；
-本wiki做测试使用。</p>
-<h2 id="wiki">关于Wiki的草案</h2>
-<h1 id="_2">一、导引页</h1>
-<ul>
-<li>参考CTF wiki,对成员的不同水平进行的导航，以及颜色的选择；</li>
-<li>包括Lockey的历史和纲领；</li>
-<li>使用指南，包括互联网现状说明，技术的类别和不同专业学习的方向</li>
-</ul>
-<h1 id="_3">二、各分类</h1>
-<ul>
-<li><strong>快速扫盲篇</strong>：包括GFW，开源软件，计算机装机、装系统的方法，联邦的使用方法，以及技术测试等等；</li>
-<li><strong>隐私保护篇</strong>：由Yon撰写，主要面向新成员的设备安全保护；</li>
-<li><strong>硬件篇</strong>：由Dichgrem撰写，主要包括：
-  1.消费级硬件的组成原理，发展历史和选购标准；
-  2.常见系统故障的排除；
-  3.服务器的选购与搭建；
-  4.其他硬件的玩法，如NAS，ATV等等；
-  5.计算机组成原理和架构体系；</li>
-<li><strong>软件篇</strong>：由Yon等书写，主要包括：
-  1.开源软件的集合与使用，包括win,android和linux平台，并提供打包好的系统镜像和PE；
-  2.待定</li>
-<li><strong>系统篇</strong>：主要介绍linux，包括：
-  1.发展历史
-  2.组成与使用
-  3.日常使用与优化</li>
-<li><strong>语言篇</strong>：主要介绍C++，python等；包括：
-  1.前端：JS，HTML，CSS
-  2.后端：K8S
-  3.标记语言：markdown</li>
-<li><strong>服务器篇</strong>：介绍服务器运维等等，包括VPS的搭建，联邦维护等等；
-  1.nginx
-  2.docker
-  3.git
-  4.vim</li>
-<li><strong>网络篇</strong>：主要包括：
-  1.数据通信（RS）结合GFW原理
-  2.无线技术（WLAN）结合WIFI
-  3.网络安全（其实可以作为一个大类）</li>
-</ul>
+<p>前言：假期将至，不少家里有闲置设备的小伙伴想尝试开设一个我的世界（Minecraft）服务器，却不知从何下手。本文以PVE-Debian-MCSM为主线介绍其部署流程。</p>
+<hr />
+<p>什么是PVE？<br />
+PVE (全称 Proxmox Virtual Environment) 是一款开源免费的虚拟化环境平台，同时支持KVM 虚拟机和 LXC 容器。它基于 Debian 和 KVM 技术开发，可在一台 PC 或服务器上同时运行Linux、OpenWRT、Windows 等，实现计算、网络、存储一体化解决方案，即所谓的“all in one”。类似的平台还有ESXi、Unraid等。<br />
+<img alt="53e801e6fbd68bae10745a25acd05a76.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/4601ee4de2174a28ac7e2f040b21b842.png" /><br />
+什么是MCSM？<br />
+MCSManager 面板（简称：MCSM 面板）是一款全中文，轻量级，开箱即用，多实例和支持 Docker 的 Minecraft 服务端管理面板。<br />
+此软件在 Minecraft 和其他游戏社区内中已有一定的流行程度，它可以帮助你集中管理多个物理服务器，动态在任何主机上创建游戏服务端，并且提供安全可靠的多用户权限系统，可以很轻松的帮助你管理多个服务器。</p>
+<p><img alt="cfbf1eeea724edca32c0460a1ccc7864.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/759003907d064631a45c714dd6b73629.png" /></p>
+<hr />
+<p>具体步骤：安装PVE并优化，开设虚拟机并安装Debian，安装mscm界面并开设实例，配置网络服务。</p>
+<hr />
+<p>准备工作:<br />
+1.PVE镜像，推荐使用7.4版本<strong><a href="https://www.proxmox.com/en/downloads" title="https://www.proxmox.com/en/downloads">https://www.proxmox.com/en/downloads</a></strong><br />
+2.Debian镜像：<strong><a href="https://mirrors.tuna.tsinghua.edu.cn/debian/dists/" title="https://mirrors.tuna.tsinghua.edu.cn/debian/dists/">https://mirrors.tuna.tsinghua.edu.cn/debian/dists/</a></strong>（不建议使用DVD版，会出现奇怪的问题。）<br />
+3.我们的老伙计Rufus：<strong><a href="https://www.423down.com/10080.html" title="https://www.423down.com/10080.html">https://www.423down.com/10080.html</a></strong><br />
+4.Purpur1.19 服务端：<strong><a href="https://purpurmc.org/" title="https://purpurmc.org/">https://purpurmc.org/</a></strong><br />
+5.MC启动器HMCL：<strong><a href="https://hmcl.huangyuhui.net/" title="https://hmcl.huangyuhui.net/">https://hmcl.huangyuhui.net/</a></strong><br />
+6.Zerotier客户端：<strong><a href="https://www.zerotier.com/download/" title="https://www.zerotier.com/download/">https://www.zerotier.com/download/</a></strong></p>
+<hr />
+<p>一、安装PVE并优化<br />
+1.将下载好的镜像用Rufus写入U盘。<br />
+<img alt="751fe8f8d3de19dfde5f1c7b3530b452.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/0b02c1efe0de4ead98dd08be78389b0f.png" /><br />
+2.将U盘插到目标主机上面，进入BIOS-boot设置启动顺序。这里我使用二手浪潮服务器X99主板，矿龙电源以及一块128G的SSD固态。注意：大部分服务器主板有机箱入侵检测机制，需要在说明书中找到特定针脚并用导电帽盖上，否则无法开机。<br />
+3.进入安装界面，选择install；<br />
+<img alt="9cfbc795340a2f83e03be769d8627ea0.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/49e9325f59384f70a287c3de9c697d60.png" /><br />
+随后跑码，进入如下界面，同意协议：<br />
+<img alt="f0be25c4df2920e7b92b4804b5459d30.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/7c3fd5cff25b4c399f7bab85150c814d.png" /><br />
+设置硬盘与文件类型，可以选择ext4或者btrfs;<br />
+<img alt="7e884693e27f8061ca5dd7d720ee94a8.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/479d216f5141479a963a99b335dd8bf7.png" /><br />
+选择国家与地区，这里需要手打出China；<br />
+<img alt="a2e4b5f5a4fe692883273d4f652ac008.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/2e7a49eccbb24aeea0d855cef076861e.png" /><br />
+随后设置密码与邮件，邮件可以随便填：<br />
+<img alt="e7f3d1f0c6d0f72f495694b26a3d3bf3.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/3b4b298c6bf343359914d75abd9f6553.png" /><br />
+然后设置网络连接，这里插网线就有地址；设置主机名，并记下内网IP地址；<br />
+<img alt="0c2e0accc616094d3477ff28d5b91d5a.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/b389f36acc3d4cb598d6bafd5a3e2d87.png" /><br />
+检查无误后开始安装：<br />
+<img alt="d8d948982dd71f94917f13619e59b72f.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/a036196c571b41cdbf34a1c0f706256f.png" /></p>
+<p><img alt="b70954fa703cca6d7cba13c0a4271325.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/33eb61bdb1da4f0896b2d61364dbfb91.png" /></p>
+<p>安装完成后reboot。<br />
+4.浏览器打开PVE地址，进入系统后我们需要给PVE换源。<br />
+首先，移除(备份)一下 PVE 原始的官方源 (将 sources.list 改名为 sources.list.bak)<br />
+<strong>mv /etc/apt/sources.list /etc/apt/sources.list.bak</strong><br />
+添加国内 Debian 软件源：<br />
+<strong>nano /etc/apt/sources.list</strong><br />
+改为<br />
+<strong>deb <a href="https://mirrors.ustc.edu.cn/debian/" title="https://mirrors.ustc.edu.cn/debian/">https://mirrors.ustc.edu.cn/debian/</a> bookworm main contrib<br />
+deb-src <a href="https://mirrors.ustc.edu.cn/debian/" title="https://mirrors.ustc.edu.cn/debian/">https://mirrors.ustc.edu.cn/debian/</a> bookworm main contribe<br />
+deb <a href="https://mirrors.ustc.edu.cn/debian/" title="https://mirrors.ustc.edu.cn/debian/">https://mirrors.ustc.edu.cn/debian/</a> bookworm-updates main contrib<br />
+deb-src <a href="https://mirrors.ustc.edu.cn/debian/" title="https://mirrors.ustc.edu.cn/debian/">https://mirrors.ustc.edu.cn/debian/</a> bookworm-updates main contrib</strong><br />
+[[编辑文件]] pve-no-subscription.list<br />
+<strong>nano /etc/apt/sources.list.d/pve-no-subscription.list</strong><br />
+[[内容如下：]]<br />
+<strong>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian" title="https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian">https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian</a> bookworm pve-no-subscription</strong><br />
+屏蔽 PVE 企业源：<br />
+<strong>nano /etc/apt/sources.list.d/pve-enterprise.list</strong><br />
+将下面这一行注释掉 (前面加上井号)：  </p>
+<h1 id="deb-httpsmirrorstunatsinghuaeducnproxmoxdebian-bookworm-pve-no-subscription"><strong>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian" title="https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian">https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian</a> bookworm pve-no-subscription</strong></h1>
+<p>更新测试：<br />
+<strong>apt-get update</strong></p>
+<hr />
+<p>二、新建虚拟机并安装Debian<br />
+1.找到local-btrfs(pve),在其中的ISO中上传下载好的Debian镜像；<br />
+<img alt="b6eb439b967fcd2951f07b0575e554cb.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/86eb32017f72462dbaa9be5fd7dccd50.png" /><br />
+2.随后创建虚拟机，选择Debian镜像并设置CPU核数与硬盘、内存大小；<br />
+<img alt="389a5dd54453a02de76da5299024cd27.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/e1503248060c44358fdf6656d588d5d4.png" /></p>
+<p><img alt="9ab315a71e69c8efff94693a8c559297.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/2d863d5054624dff9ccc1baed0cdb101.png" /><br />
+<img alt="ebc0060b0768485a948499b2f7036226.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/5fa8ee886f0e48b79d50973d69fc8df3.png" /><br />
+3.一路确认后开机进入命令行界面，即可开始Debian安装。我们选择graphical install：</p>
+<p><img alt="ae9ae4fd0d73dbf3d5ed74ae5bdceac5.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/45bf86fd6c7d4870b93e8682b567d97c.png" /><br />
+4.选择国家和语言，随后自动配置网络；<br />
+<img alt="6301cc673ef7882f549bb7f7a5875470.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/396afb8c996b45c9b4d418325a18c639.png" /><br />
+5.设置主机名，跳过域名设置；设置root账户名和密码、普通用户账户名与密码；<br />
+<img alt="5fd6bb17914c750b58a1f58d48f82e5c.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/6734ded3c0d944018dba34f3b3369876.png" /></p>
+<p><img alt="3ee9257c6aabcb7357d8c7dfd26c9c0c.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/4e9d69d9b15d4fa8b03d952a5de49a84.png" /><br />
+6.对磁盘进行分区，由于是虚拟机我们选择使用整个磁盘；<br />
+<img alt="2f1765015577fb3f31a3f0d989b2c810.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/c11e5390cc1143af84ea256a149a7e1a.png" /><br />
+<img alt="f4e554cc75c0558db4a5e9386b96696f.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/efe386a2ecd347848fa3f3ca2452e06d.png" /><br />
+7.安装基本系统，随后将进入包管理器和大组件安装；<br />
+<img alt="c4215fd782b25dcba4c9db04e2127168.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/05fbb6c140a04d1482ce1e0dc75c8746.png" /><br />
+我们选择清华源，速度较快。<strong>注意：Debian安装时默认开启安全源，这个源是国外的所以下载速度极慢，因此还需要修改配置文件</strong>，这里使用Ctrl+Alt+F2 从图形界面转到tty命令终端, 键入 Enter，使用命令<strong>nano /target/etc/apt/sources.list</strong>，将所有的源都改成 <strong><a href="http://mirrors.ustc.edu.cn" title="http://mirrors.ustc.edu.cn">http://mirrors.ustc.edu.cn</a></strong> 或者清华源，然后Ctrl+X 退出保存， Ctrl+Alt+F5回到图形界面。<br />
+<img alt="1840f2323763bcb5207f0076efacf076.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/c97903f0e0994f19a5947fd1eae649c3.png" /></p>
+<p>下载需要一些时间，此时可以饮口茶先，随后看到如下界面：<br />
+<img alt="7d376f94421b763f035412cc4d634bb1.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/da673db3f83a422ca04f4eb215514f56.png" /><br />
+由于是服务器所以不需要桌面环境：</p>
+<p><img alt="2107b6ac52263cae07f545b92cef26c0.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/9fbdf0a19af9461aacb8d48ea5bc4d89.png" /><br />
+安装grub引导：</p>
+<p><img alt="849bbfcd73400531792ac40f8a7ab651.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/4621666e827244edba85bec440d1a2e9.png" /><br />
+随后安装完成，reboot后进入mscm的安装。</p>
+<hr />
+<p>三、安装MCSM并开设实例<br />
+1.开机进入tty1界面<br />
+<img alt="d022941051bc191eda761de4ff4bf94c.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/226b08ffaa6f47908adc93233fa55288.png" /><br />
+2.安装JAVA环境，不同版本的游戏的Java版本也不同。这里我们使用1.19版，需要安装Java18。<br />
+安装wget 和 下载Java18<br />
+<strong>apt install wget &amp;&amp; wget <a href="http://img.zeruns.tech/down/Java/OpenJDK18U-jre_x64_linux_hotspot_18.0.1_10.tar.gz" title="http://img.zeruns.tech/down/Java/OpenJDK18U-jre_x64_linux_hotspot_18.0.1_10.tar.gz">http://img.zeruns.tech/down/Java/OpenJDK18U-jre_x64_linux_hotspot_18.0.1_10.tar.gz</a></strong></p>
+<p>创建安装目录<br />
+<strong>mkdir /usr/local/java/</strong></p>
+<p>解压当前目录下的JDK压缩文件<br />
+<strong>tar -zxvf OpenJDK18U-jre_x64_linux_hotspot_18.0.1_10.tar.gz -C /usr/local/java/</strong></p>
+<p>软链接程序到环境变量中<br />
+<strong>ln -sf /usr/local/java/jdk-18.0.1+10-jre/bin/java /usr/bin/java</strong></p>
+<p>测试是否安装正常，显示 <strong>openjdk version "18.0.1" 2022-04-19</strong> 则为正常<br />
+java -version<br />
+3.端口开发，面板需要 23333和24444 端口，游戏服务器默认端口是 25565。<br />
+在PVE-防火墙中打开它们。如果还是不行，执行如下命令：<br />
+<strong>systemctl stop firewalld<br />
+systemctl disable firewalld<br />
+service iptables stop</strong><br />
+从而关闭防火墙。<br />
+4.安装面板，这里使用一键安装命令（注意该脚本仅适用于 AMD64 架构）<br />
+<strong>wget -qO- <a href="https://gitee.com/mcsmanager/script/raw/master/setup.sh" title="https://gitee.com/mcsmanager/script/raw/master/setup.sh">https://gitee.com/mcsmanager/script/raw/master/setup.sh</a> | bash</strong><br />
+执行完成后，使用 <strong>systemctl start mcsm-{web,daemon}</strong> 即可启动面板服务。使用 <strong>systemctl enable mcsm-{daemon,web}.service</strong> 实现开机自启。<br />
+5.在浏览器中打开该地址加上23333端口后缀，即可看到面板，账户为root，密码为123456。<br />
+6.新建实例，上传Purpur1.19 服务端,设置名称随后开启实例</p>
+<p><img alt="bb3e0e096b2c23266a9189b587a1553a.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/337d3b53647a493ca8d80ec8aa62783a.png" /></p>
+<p><img alt="254598373a76972cae7cd015b0284a0d.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/505eee9696b845d4bd0588d946f8509a.png" />)</p>
+<p>7.随后我们可以在配置文件中设置游戏的相关选项，如关闭正版验证等。</p>
+<p><img alt="ee62332073fd8c8fcdf4b2fe3f6e9057.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/00ddfd6df3714546840c5f3d073e3530.png" /></p>
+<p><img alt="0d4b4e5f7792b93037afb0af865254e0.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/6197c8dfccff44ff86e7d795c2c61c2d.png" /></p>
+<p>8.大功告成，此时打开HMCL启动器，即可加入游戏。</p>
+<p><img alt="de5c2103ff36fca5992393f0866c19be.png" src="file:///C:/Users/szp11/.config/joplin-desktop/resources/0c12c2490db44135891030e88eba0c13.png" /></p>
+<hr />
+<p>四、配置联机网络<br />
+1.此时不要忘记需要和小伙伴们一起玩耍。如果你家里有公网固定IPv4或者IPv6，直接输入联机即可；如果没有公网IP，此时就需要进行内网穿透或者DDNS。<br />
+这里介绍一种名为zerotier的工具。<br />
+2.首先在https://www.zerotier.com/注册并创建一个私有网络；<br />
+3.首先在虚拟机中安装curl命令支持<br />
+<strong>apt-get install curl</strong><br />
+4.安装gnupg非对称信息加密系统，通讯所需必备软件<br />
+<strong>apt-get install gnupg</strong><br />
+5.安装ZeroTier<br />
+<strong>curl -s <a href="https://install.zerotier.com/" title="https://install.zerotier.com/">https://install.zerotier.com/</a> | bash</strong><br />
+安装成功后提示如下：<br />
+<strong>Success! You are ZeroTier address [ xxxxxxxxx ].</strong><br />
+方括号内地址为类似于MAC地址。<br />
+6.设定开机自启动（分别执行如下命令）<br />
+<strong>systemctl start zerotier-one.service<br />
+systemctl enable zerotier-one.service</strong><br />
+7.加入自己的私有网络<br />
+<strong>zerotier-cli join xxxxxxxxx</strong><br />
+8.大功告成!此时只要让小伙伴们下载zerotier客户端并加入相同的私有网络，即可一起快乐联机！</p>
+<hr />
+<p>后记：一些对PVE的优化：<br />
+<strong><a href="https://blog.vvusu.com/article/pve-install" title="https://blog.vvusu.com/article/pve-install">https://blog.vvusu.com/article/pve-install</a></strong><br />
+<strong><a href="https://www.cnblogs.com/jimaojin/p/12378201.html" title="https://www.cnblogs.com/jimaojin/p/12378201.html">https://www.cnblogs.com/jimaojin/p/12378201.html</a></strong><br />
+<strong><a href="https://tty228.github.io/2022/06/18/%E3%80%90Proxmox%20VE%E3%80%91PVE%20%E9%A6%96%E9%A1%B5%E6%98%BE%E7%A4%BA%20CPU%E3%80%81%E4%B8%BB%E6%9D%BF%E3%80%81NVME%E3%80%81%E7%A1%AC%E7%9B%98%20%E6%B8%A9%E5%BA%A6%E7%AD%89%E4%BF%A1%E6%81%AF/" title="https://tty228.github.io/2022/06/18/%E3%80%90Proxmox%20VE%E3%80%91PVE%20%E9%A6%96%E9%A1%B5%E6%98%BE%E7%A4%BA%20CPU%E3%80%81%E4%B8%BB%E6%9D%BF%E3%80%81NVME%E3%80%81%E7%A1%AC%E7%9B%98%20%E6%B8%A9%E5%BA%A6%E7%AD%89%E4%BF%A1%E6%81%AF/">https://tty228.github.io/2022/06/18/【Proxmox VE】PVE 首页显示 CPU、主板、NVME、硬盘 温度等信息/</a></strong></p>
 
 
   
@@ -787,10 +845,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["header.autohide", "navigation.tracking", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.annotate"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.tracking", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>
